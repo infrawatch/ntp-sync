@@ -1,0 +1,8 @@
+master-0.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+master-1.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+master-2.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+node-0.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+infra-2.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+infra-1.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+infra-0.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
+lb-0.serviceassurance.lab.upshift.rdu2.redhat.com ansible_user=quicklab
