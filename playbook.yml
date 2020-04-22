@@ -3,27 +3,13 @@
   become: true
   become_user: root
   tasks:
-    - name: Make sure ntp is installed
-      package:
-        name: ntp
-        state: present
-
     - name: Set configuration for ntp.conf living internal to RH
       copy:
-        src: files/ntp.conf
-        dest: /etc/ntp.conf
-
-    - name: Stop ntp service temporarily
-      systemd:
-        name: ntpd.service
-        state: stopped
-
-    - name: Make sure date is updated
-      command: ntpdate clock.redhat.com
-
+        src: files/chrony.conf
+        dest: /etc/chrony.conf
     - name: Start and enable ntp service
       systemd:
-        name: ntpd.service
+        name: chronyd.service
         state: restarted
         enabled: yes
 
